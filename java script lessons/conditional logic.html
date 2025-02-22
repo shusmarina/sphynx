@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let balance = 500;
+
+
+        document.write('START', '<br>');
+
+        const product1PriceString = window.prompt('How much does the product 1 cost?');
+        const product2PriceString = window.prompt('How much does the product 2 cost?');
+        const product3PriceString = window.prompt('How much does the product 3 cost?');
+        const product1Price = window.Number (product1PriceString);
+        const product2Price = window.Number (product2PriceString);
+        const product3Price = window.Number (product3PriceString);
+
+       // if (balance >= product1PriceString) {
+
+        // if (product1PriceString <= balance) {
+        //     document.write('Product purchased');
+        // } else {
+        //     document.write('Not enough money');
+        // }
+        // document.write('<br>', 'END');
+
+ 
+       if (window.isNaN(product1Price)) {
+            document.write('You entered an incorrect number'+"<br>");
+        } else
+            if (product1PriceString > balance) {
+                document.write('Not enough money'+ "<br>");
+            } else {
+                document.write('Product purchased'+ "<br>");
+            } 
+
+    //         if (window.isNaN(product2Price)) {
+    //         document.write('You entered an incorrect number'+"<br>");
+    //     } else
+    //         if (product2PriceString > balance) {
+    //             document.write('Not enough money'+ "<br>");
+    //         } else {
+    //             document.write('Product purchased'+ "<br>");
+    //         } 
+
+
+    //         if (window.isNaN(product3Price)) {
+    //         document.write('You entered an incorrect number'+ "<br>");
+    //     } else
+    //         if (product3PriceString > balance) {
+    //             document.write('Not enough money'+ "<br>");
+    //         } else {
+    //             document.write('Product purchased'+ "<br>");
+    //         } 
+
+
+                if (product1Price <= balance, product1Price >=0) {
+                    document.write ('Product purchased'+ "<br>");
+                } else {
+                    document.write ('Not enough money'+ "<br>");
+                } 
+
+
+
+                if (product2Price <= balance, product2Price >=0) {
+                    document.write ('Product purchased'+ "<br>");
+                } else {
+                    document.write ('Not enough money'+ "<br>");
+                }
+
+                if (product3Price <= balance, product3Price >=0) {
+                    document.write ('Product purchased'+ "<br>");
+                } else {
+                    document.write ('Not enough money'+ "<br>");
+                }
+                
+
+
+                            let remains = (balance - product1Price - product2Price - product2Price);
+            
+           if (product1Price > balance, product1Price <=0) {
+        remains = (balance - product2Price - product2Price);
+           } else {
+            remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+           if (product2Price > balance, product2Price <=0) {
+        remains = (balance - product1Price - product3Price);
+           } else {
+            remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+           if (product3Price > balance, product3Price <=0) {
+        remains = (balance - product1Price - product2Price);
+           } else {
+            remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+           if (product1Price > balance, product2Price > balance, product1Price <=0, product2Price <=0) {
+            remains = (balance - product3Price);
+           } else {
+            remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+           if (product2Price > balance, product3Price > balance, product2Price <=0, product3Price <=0) {
+            remains = (balance - product1Price);
+           } else {
+            remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+           if (product1Price > balance, product3Price > balance, product1Price <=0, product3Price <=0) {
+            remains = (balance - product2Price);
+           } else {
+            remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+           if (product1Price > balance, product2Price > balance, product3Price > balance, product1Price <=0, product2Price <=0, product3Price <=0) {
+            remains = (balance);
+           } else {
+           remains = (balance - product1Price - product2Price - product3Price);
+           }
+
+                               document.write ('your balance'+':'+' ');
+                               document.write (remains); 
+
+
+       
+        document.write('<br>', 'END');
+
+        
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

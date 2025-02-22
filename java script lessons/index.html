@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        ///functions 
+       function showHelloMessage(_notificationMessages) {
+            alert(_notificationMessages.start.hello)
+        }
+
+
+        function getPercentage(_result, _words) {
+            return _result.correctAnswersCount / _words.length * 100;
+        }
+
+        function startTraining(_words, _result) {
+            for (let i = 0; i < words.length; i++) {
+                let userAnswer = prompt(words[i].original);
+                alert(userAnswer === words[i].translation);
+                if (userAnswer === words[i].translation) {
+                    _result.correctAnswersCount = _result.correctAnswersCount + 1;
+                }
+            }
+        }
+
+        function showResults(_result, _words, _settigs, _notificationMessages) {
+            const userCorrectAnswersPercent = getPercentage(result, words);
+
+            if (userCorrectAnswersPercent > settings.correctAnswersMinPercent) {
+                alert(notificationMessages.result.finishSuccess);
+            } else {
+                alert(notificationMessages.result.finishUnsuccess);
+            }
+        }
+
+
+
+         ///data
+        const words = [
+            {
+                original: 'Cat',
+                translation: 'Кошка'
+            },
+            {
+                original: 'Dog',
+                translation: 'Собака'
+            },
+            {
+                original: 'Bag',
+                translation: 'Сумка'
+            }
+        ]
+
+        const notificationMessages = {
+            start: {
+                hello: 'Hi! You can learn English. Good luck'
+            },
+            result: {
+                finishSuccess: 'Умничка',
+                finishUnsuccess: 'Ты лох'
+            },
+        }
+
+
+        const settings = {
+            correctAnswersMinPercent: 50
+        }
+
+        const result = {
+            correctAnswersCount: 0
+        }
+
+        let correctAnswersCount = 0;
+
+        //////work
+        showHelloMessage(notificationMessages);
+
+        startTraining(words, result);
+
+        showResults(result, words, settings, notificationMessages); 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

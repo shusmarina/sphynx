@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+           let room = {
+wall1: {
+    hasWindow: true,
+    color: 'pink',
+    conditioner: null
+},
+wall2: {
+hasWindow: false,
+     color: 'pink',
+    conditioner: null
+},
+wall3: {
+hasWindow: false,
+     color: 'pink',
+    conditioner: {
+        manufacturer: 'LG',
+        power: 2020
+    }
+},
+wall4: {
+hasWindow: false,
+     color: 'pink',
+    conditioner: null
+}
+} 
+
+document.write(room.wall3.conditioner.manufacturer);
+
+
+
+
+         </script>
+
+
+
+
+</body>
+
+</html>

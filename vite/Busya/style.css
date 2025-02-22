@@ -1,0 +1,52 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    
+  }
+  
+header {
+
+}
+
+.navbar {
+
+}
+
+.menu-items {
+
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item a {
+ font-size: 18 px;
+ color: #1F1534; 
+
+
+}
+
+.main {
+
+}
+
+
+.services {
+
+}
+
+
+.roadmap {
+
+}
+
+
+.contacts {
+
+}
+
+
+
+footer {
+
+}
