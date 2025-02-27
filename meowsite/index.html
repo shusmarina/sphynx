@@ -11,22 +11,6 @@
     <frame src="text.html" name="text" id="text-frame" marginwidth="10" marginheight="10" noresize>
     <frame src="busya.html" name="busya" id="busya-frame" marginwidth="10" marginheight="10" noresize>
     </frameset>
-
-    <code>
-    <script>
-    window.addEventListener('message', function(event) {
-      if (event.source === window.frames['text-frame'] && event.data.type === 'closeText') {
-        document.getElementById('text-frame').remove();
-        sessionStorage.setItem('textFrameClosed', 'true');
-      }
-    });
-
-    // Проверка sessionStorage при загрузке страницы
-    if (sessionStorage.getItem('textFrameClosed') === 'true') {
-      document.getElementById('text-frame').remove();
-    }
-  </script>
-  </code>
  
       
 </html>
