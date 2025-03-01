@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт про лысого сфинкса Бусю">
+    <meta name="keywords" content="сфинксы, кошка, Буся">
     <title>Бусин сайт</title>
 </head>
 <link rel="icon" href="https://png.pngtree.com/png-clipart/20220206/original/pngtree-hen-white-colour-front-look-png-png-image_7263988.png" sizes="64x64">
@@ -11,22 +13,6 @@
     <frame src="text.html" name="text" id="text-frame" marginwidth="10" marginheight="10" noresize>
     <frame src="busya.html" name="busya" id="busya-frame" marginwidth="10" marginheight="10" noresize>
     </frameset>
-
-    <code>
-    <script>
-    window.addEventListener('message', function(event) {
-      if (event.source === window.frames['text-frame'] && event.data.type === 'closeText') {
-        document.getElementById('text-frame').remove();
-        sessionStorage.setItem('textFrameClosed', 'true');
-      }
-    });
-
-    // Проверка sessionStorage при загрузке страницы
-    if (sessionStorage.getItem('textFrameClosed') === 'true') {
-      document.getElementById('text-frame').remove();
-    }
-  </script>
-  </code>
  
       
 </html>
