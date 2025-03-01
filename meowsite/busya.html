@@ -40,13 +40,37 @@
                         }
 
 
+
+                        nav {
+                            text-align: center;
+                            background-color: #d6daff;
+                            border: 2px dotted #0046ff;
+                        }
+
+                        nav table {
+                            background-color: #d6daff; 
+                        }
+
+                        nav td {
+                            border: 5px solid #0046ff;
+                            background-color: #d6daff;
+                            padding: 5px;
+                        }
+
+                        nav a:hover { 
+                            color: #007bff; 
+                        }
+
+
         .center {
             text-align: center;
         }
 
+
         .left {
             text-align: left;
         }
+        
         
         .bold {
             font-weight: bold;
@@ -90,9 +114,49 @@
                                                         }
 
 
+
+                                                    h1 {
+                                                        font-family: Arial, sans-serif;
+                                                        font-size: 60px;
+                                                        color: #0056f8;
+                                                        -webkit-text-stroke: 1px #000000;
+                                                    }
+
+                            table {
+                                margin: 0 auto;
+                            }
+
+                            table td {
+                                border: 5px solid #ff268f;
+                                background-color: #ffd6e7;
+                                padding: 5px;
+                                font-size: 25px;
+                            }
+
+                                                        .busyaStory {
+                                                        display: flex;
+                                                        background-color: #f0c8d9;
+                                                        padding: 30px;
+                                                        border-radius: 80px;
+                                                        }
+                                                        
+                                                        .catImage {
+                                                            margin-right: 30px;
+                                                            background-color: #f0c8d9;
+                                                            max-width: 300px;
+                                                            height: auto;
+                                                        }
+                                                        .catText {
+                                                            flex: 1;
+                                                            background-color: #f0c8d9;
+                                                            padding: 50px;
+                                                        }
+
+
         .text-decoration-none {
             text-decoration: none;
         }
+
 
         .text-decoration {
             text-decoration: line-through
@@ -101,9 +165,11 @@
         * {
             font-family: Arial;
             background-color: #efe8ff;
+            background-color: #efe8ff;
         }
 
         .border-bold {
+            border: 4px solid #986bff;
             border: 4px solid #986bff;
         }
 
@@ -111,7 +177,10 @@
             color: #009268;
         }
 
+
         img.center {
+            display: block;
+            margin: 0 auto;
             display: block;
             margin: 0 auto;
         }
@@ -124,6 +193,7 @@
 
             50% {
                 color: #258e23;
+                color: #258e23;
             }
 
             100% {
@@ -131,8 +201,31 @@
             }
         }
 
+
         .text {
             animation: color-change 3s infinite;
+        }
+                                                @keyframes button {
+                                                    0% {
+                                                        background-color: #ff0013;
+                                                    }
+                                                    50% {
+                                                        background-color: #3200ff;
+                                                    }
+                                                    100% {
+                                                        background-color: #ff0013;
+                                                    }
+                                                }
+                                                .button {
+                                                    background-color: #ff0000;
+                                                    border: 2px solid #000000;
+                                                    border-radius: 80px;
+                                                    padding: 30px;
+                                                    animation: button 3s infinite;
+                                                }
+                                                .button a:hover {
+                                                    color: #007bff; 
+                                                }
         }
                                                 @keyframes button {
                                                     0% {
@@ -183,12 +276,51 @@
 
 
 
+
+
+
+    <nav>
+        <font size="+3">
+            <table>
+                <tr class="center">
+                    <td><a href="#lessons" class="text-decoration-none link">Любимые дела</a></td>
+                    <td><a href="#hobbies" class="text-decoration-none link">Навыки</a></td>
+                    <td><a href="#history" class="text-decoration-none link">Моя история</a></td>
+                    <td><a href="#chart" class="text-decoration-none link">График кормления</a></td>
+                    <td><a href="#sleep" class="text-decoration-none link">Сон</a></td>
+                    <td><a href="#pretty" class="text-decoration-none link">Мода</a></td>
+                    <td><a href="#game" class="text-decoration-none link">Игры</a></td>
+                </tr>
+            </table>
+        </font>
+    </nav>
+
+
+
+
+
+
+    <main>
+
+
+        <h1> <p title="Мяууууууу" class="center">Я - Буся!</p> </h1>
     <main>
 
 
         <h1> <p title="Мяууууууу" class="center">Я - Буся!</p> </h1>
 
 
+
+                            <marquee behavior="scroll" direction="right" scrollamount="5" class="text">МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ
+                                МЯУ МЯУ МЯУ МЯУ МЯУ
+                                МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ
+                                МЯУ МЯУ
+                                МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ</marquee>
+                            <marquee behavior="scroll" direction="left" scrollamount="5" class="text"> МУР МУР МУР МУР МУР МУР МУР МУР МУР
+                                МУР МУР МУР МУР МУР
+                                МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР
+                                МУР МУР
+                                МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР МУР </marquee>
 
                             <marquee behavior="scroll" direction="right" scrollamount="5" class="text">МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ МЯУ
                                 МЯУ МЯУ МЯУ МЯУ МЯУ
@@ -214,6 +346,29 @@
                         <td title="это же чудесно!" class="center">Нюхать цветочки</td>
                     </tr>
 
+
+
+        <section>
+            <h1 title="люблююю что-то делать" class="center bold"><a name="lessons">Мои любимые занятия</a></h1>
+            <table class="center">
+                <tbody>
+                    <tr>
+                        <td title="ням, ням" class="center">Кушать</td>
+                        <td title="хрррррр" class="center">Спать</td>
+                        <td title="это же чудесно!" class="center">Нюхать цветочки</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://zoo69.ru/wp-content/uploads/2020/09/koshka-est-korm-2.jpg" height="200">
+                        </td>
+                        <td><img src="https://yac-wh-sb-prod-s3-media-07001.storage.yandexcloud.net/media/images/image_25.max-2880x1820.format-png_joUIUcI.png"
+                                height="200"></td>
+                        <td><img src="https://masterpiecer-images.s3.yandex.net/655f155ea42711eea120de08f62dc5bd:upscaled"
+                                height="200"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
                     <tr>
                         <td><img src="https://zoo69.ru/wp-content/uploads/2020/09/koshka-est-korm-2.jpg" height="200">
                         </td>
@@ -228,8 +383,17 @@
 
 <br>
 
+<br>
 
 
+
+        <section>
+            <h2 title="То, что я делаю лучше всего"><a name="hobbies">Мои увлечения:</a></h2>
+            <ul>
+                <li class="bold"> Сидеть на подоконнике
+                    <ol><i>- Я наблюдаю за птичками, <span class="text-decoration">вот бы их поймать</span></i></ol>
+                    <ol><i>- Оцениваю погоду, смотрю на деревья</i></ol>
+                    <ol><i>- Греюсь на солнышке</i></ol>
         <section>
             <h2 title="То, что я делаю лучше всего"><a name="hobbies">Мои увлечения:</a></h2>
             <ul>
@@ -244,7 +408,24 @@
                 <li class="bold">Устраивать ночной тыгыдык</li>
             </ul>
         </section>
+                </li>
+                <li class="bold">Ловить мышей</li>
+                <li class="bold">Бегать за мячиком</li>
+                <li class="bold">Устраивать ночной тыгыдык</li>
+            </ul>
+        </section>
 
+<br>
+<br>    
+
+
+        <div class="busyaStory">
+
+          <div class="catImage">
+            <img src="https://www.lubimchik.ru/upload/medialibrary/ca5/ca5241dde666bf544587d789650b3006.jpg" alt="здесь должно быть фото">
+           </div>
+
+           <div class="catText">
 <br>
 <br>    
 
@@ -274,8 +455,47 @@
         </div>
       
 <br><br><br><br>
+      
+<br><br><br><br>
 
 
+        <section>
+            <table border="1" class="center">
+                <caption class="bold">
+                    <font size="+3"><a name="chart">График кормления сфинкса</a></font>
+                </caption>
+                <tr>
+                    <td rowspan="4"><b>Объем корма (в граммах)</b></td>
+                    <td colspan="8">
+                        <b class="center">Дни недели</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>понедельник</td>
+                    <td>вторник</td>
+                    <td>среда</td>
+                    <td>четверг</td>
+                    <td>пятница</td>
+                    <td>суббота</td>
+                    <td>воскресенье</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>300</td>
+                    <td>400</td>
+                    <td>200</td>
+                    <td>350</td>
+                    <td>200</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="center bold">Съедено корма за неделю:</td>
+                    <td>
+                        <code><pre> function</pre></code>
+                    </td>
+                </tr>
+            </table>
+        </section>
         <section>
             <table border="1" class="center">
                 <caption class="bold">
@@ -320,6 +540,9 @@
         <br>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
 
 
 
@@ -328,12 +551,20 @@
                 <font size="+20">НЕ НАЖИМАЙ!!</font></button>
             </a>
         </div>
+        <div class="center">
+            <button class="button"><a href="primer.html" class="text-decoration-none link" target="_top">
+                <font size="+20">НЕ НАЖИМАЙ!!</font></button>
+            </a>
+        </div>
 
+        <br>
+        <br>
         <br>
         <br>
 
         <div>
 
+        <h1 title="хррррррр" class="center"><a name="sleep">Это я спящая!</a></h1>
         <h1 title="хррррррр" class="center"><a name="sleep">Это я спящая!</a></h1>
 
         <img src="https://cs11.pikabu.ru/post_img/big/2020/05/27/4/159055855312763528.jpg" height="250">
@@ -341,7 +572,13 @@
         <img src="https://img.freepik.com/premium-photo/hairless-cat-breed-canadian-sphynx-sleeps_125966-5876.jpg"
             height="250">
         <img src="https://cs11.pikabu.ru/post_img/big/2020/05/27/4/159055855312763528.jpg" height="250">
+        <img src="https://cs11.pikabu.ru/post_img/big/2020/05/27/4/159055855312763528.jpg" height="250">
+        <img src="https://img.freepik.com/premium-photo/sphynx-cat-is-sleeping-cat-bed_564806-2814.jpg" height="250">
+        <img src="https://img.freepik.com/premium-photo/hairless-cat-breed-canadian-sphynx-sleeps_125966-5876.jpg"
+            height="250">
+        <img src="https://cs11.pikabu.ru/post_img/big/2020/05/27/4/159055855312763528.jpg" height="250">
 
+        <h1 title="хихихи" class="center"><a name="pretty">Это я красотка!</a></h1>
         <h1 title="хихихи" class="center"><a name="pretty">Это я красотка!</a></h1>
 
         <img src="https://cs10.pikabu.ru/post_img/big/2018/02/07/2/151796285318161628.jpg" height="250">
@@ -352,17 +589,27 @@
         </div>
 
         <section class="center">
+        <section class="center">
 
+            <h1 title="люблю играть"><a name="game">Это я играюсь!</a></h1>
+            <img src="https://99px.ru/sstorage/53/2019/06/tmb_264500_424261.jpg" class="center" height="500">
             <h1 title="люблю играть"><a name="game">Это я играюсь!</a></h1>
             <img src="https://99px.ru/sstorage/53/2019/06/tmb_264500_424261.jpg" class="center" height="500">
 
         </section>
+        </section>
 
+        <br>
+        <br>
         <br>
         <br>
 
         <section class="center">
+        <section class="center">
 
+            <h1>А это мои друзья!</h1>
+            <video src="https://www.w3schools.com/html/movie.mp4" width="320" height="240" controls>
+            </video>
             <h1>А это мои друзья!</h1>
             <video src="https://www.w3schools.com/html/movie.mp4" width="320" height="240" controls>
             </video>
